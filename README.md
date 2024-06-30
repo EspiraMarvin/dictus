@@ -1,32 +1,33 @@
 ## golang crud with GORM and POSTGRES
 
-1 . Create an .env file and populate the variables below
+1. Create an .env file and populate the variables below.
 
 ```bash
 
-    # App post
-    export PORT=""
+    # APP PORT
+    PORT=
 
     # PostgreSQL
-    export DB_USER=""
-    export DB_PASS=""
-    export DB_HOST=""
-    export DB_PORT=""
-    export DB_NAME=""
+    DB_USER=""
+    DB_PASS=""
+    DB_HOST=""
+    DB_PORT=""
+    DB_NAME=""
+
 ```
 
-2. Alternatively, you could create an `env.sh` and add the following environment variables. This assumes that you have
-   created a database whose information is populated under `DB_` prefix.
+2.  Alternatively, you could create an `env.sh` and add the following environment variables. This assumes that you have
+    created a database whose information is populated under `DB_` prefix.
 
-   ```bash
+```bash
+
    # APP PORT
-   PORT=
+   export PORT=""
 
    # PostgreSQL
-   DB_USER=""
-   DB_PASS=""
-   DB_HOST=""
-   DB_PORT=""
-   DB_NAME=""
-
-   ```
+   export DB_USER=""
+   export DB_PASS=""
+   export DB_HOST=""
+   export DB_PORT=""
+   export DB_NAME=""
+```
