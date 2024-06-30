@@ -1,3 +1,5 @@
-go run server.go
+server:
+	go run server.go
 
-go run migrate/migrate.go
+migrate:
+	go run migrate/migrate.go
