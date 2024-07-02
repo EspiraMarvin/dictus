@@ -50,7 +50,7 @@ func PostsShow(c *gin.Context) {
 	id := c.Param("id")
 
 	// Get a single post
-	var post models.Post
+	var post models.Post // var to save our post queried
 	// initializers.DB.First(&post, uuid)
 	initializers.DB.Where("uuid = ?", id).First(&post)
 

@@ -5,6 +5,7 @@ import (
 
 	"github.com/EspiraMarvin/go-crud-postgres/controllers"
 	"github.com/EspiraMarvin/go-crud-postgres/initializers"
+	"github.com/EspiraMarvin/go-crud-postgres/middleware"
 	"github.com/gin-gonic/gin"
 )
 
@@ -23,6 +24,10 @@ func main() {
 	r.PUT("/posts/:id", controllers.PostsUpdate)
 	r.PATCH("/posts/:id", controllers.PostsUpdate) // partial update
 	r.DELETE("/posts/:id", controllers.PostsDelete)
+
+	r.POST("/signup", controllers.Signup)
+	r.POST("/login", controllers.Login)
+	r.GET("/validate", middleware.RequireAuth, controllers.Validate)
 
 	r.Run() // listen and serve on 0.0.0.0:3000
 }
