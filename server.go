@@ -27,6 +27,7 @@ func main() {
 
 	r.POST("/signup", controllers.Signup)
 	r.POST("/login", controllers.Login)
+	// middleware
 	r.GET("/validate", middleware.RequireAuth, controllers.Validate)
 
 	r.Run() // listen and serve on 0.0.0.0:3000
