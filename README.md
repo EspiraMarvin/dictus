@@ -7,6 +7,9 @@
     # APP PORT
     PORT=
 
+    # JWT
+    SECRET=""
+
     # PostgreSQL
     DB_USER=""
     DB_PASS=""
@@ -23,6 +26,9 @@
 
    # APP PORT
    export PORT=""
+
+   # JWT
+   export SECRET=""
 
    # PostgreSQL
    export DB_USER=""
