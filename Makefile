@@ -1,14 +1,14 @@
 run:
 	echo "running server"
-	go run server.go
+	@go run server.go
 
 migrateDB:
 	echo "running migrations"
-	go run migrate/migrate.go
+	@go run migrate/migrate.go
 
 build:
 	echo "building application"
-	go build -o bin/main main.go
+	@go build -o bin/main main.go
 
 compile:
 	echo "Compiling for every OS and Platform"
