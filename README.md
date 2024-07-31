@@ -1,4 +1,4 @@
-## golang crud with GORM and POSTGRES
+## GORM
 
 1. Create an .env file and populate the variables below.
 
